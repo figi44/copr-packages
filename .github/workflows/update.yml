@@ -27,5 +27,6 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Check for updates
-        working-directory: yazi
-        run: ./update.sh
+        run: |
+          cd yazi
+          ./update.sh
