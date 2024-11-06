@@ -14,6 +14,10 @@ jobs:
     container:
       image: "fedora:latest"
     steps:
+      - name: Install dependencies
+        run: |
+          microdnf -y install git rpm-build curl jq rpmdevtools
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
