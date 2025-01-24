@@ -1,5 +1,6 @@
 %bcond_without check
 
+%global __brp_mangle_shebangs /usr/bin/true
 %global _default_patch_fuzz 2
 %global cargo_install_lib   0
 
